@@ -1,0 +1,16 @@
+name: "React Ci Pipeline / workflow"
+
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  build_and_test:
+    runs-on: ubunto-latest
+
+    steps:
+      - name: "Setup node js"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "21"
