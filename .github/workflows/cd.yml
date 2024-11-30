@@ -28,4 +28,4 @@ jobs:
         run: npm i -g vercel
 
       - name: deploy to vercel
-        run: vercel --prod --token=${{ secrets.VERCEL_SECRET }} --confirm --name=cicdproject
+        run: vercel --prod --token=MRMZ31EXjgkzurjJKQW08Dfp --confirm --name=cicdproject
