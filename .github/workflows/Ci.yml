@@ -19,3 +19,6 @@ jobs:
 
       - name: clone repo
         uses: actions/checkout@v4
+
+      - name: install dependency
+        run: npm install
