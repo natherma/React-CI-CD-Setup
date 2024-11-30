@@ -10,7 +10,7 @@ jobs:
     runs-on: ubunto-latest
 
     steps:
-      - name: Setup node
+      - name: Setup nodejs
         uses: actions/setup-node@v4
         with:
           node-version: 20
