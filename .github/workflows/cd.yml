@@ -15,7 +15,7 @@ jobs:
       - name: dowload build file
         uses: actions/download-artifact@v4
         with:
-          name: dist
+          name: build
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ github.token }}
 
