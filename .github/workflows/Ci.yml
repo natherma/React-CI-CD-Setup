@@ -10,8 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4 #githubaction
         with:
           node-version: 20
+
       - name: check node version
         run: node --version
+
+      - name: clone repo
+        uses: actions/checkout@v4
