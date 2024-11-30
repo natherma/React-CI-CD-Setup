@@ -6,13 +6,10 @@ on:
       - master
       - main
 jobs:
-  build_and_test:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Setup nodejs
+      - name: Setup node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: check node version
-        run: node --version
