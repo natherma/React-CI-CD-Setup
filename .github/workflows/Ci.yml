@@ -10,9 +10,9 @@ jobs:
     runs-on: ubunto-latest
 
     steps:
-      - name: "Setup node js"
+      - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: "21"
-      - name: "check node version"
+          node-version: 20
+      - name: check node version
         run: node --version
